@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script>
+        function aboutus() {
+          var x = document.getElementById("myDIV");
+          if (x.style.display === "none") {
+            x.style.display = "block";
+          } else {
+            x.style.display = "none";
+          }
+        }
+        function contactus() {
+          var x = document.getElementById("myDIV2");
+          if (x.style.display === "none") {
+            x.style.display = "block";
+          } else {
+            x.style.display = "none";
+          }
+        }
+        function workwithus() {
+          var x = document.getElementById("myDIV3");
+          if (x.style.display === "none") {
+            x.style.display = "block";
+          } else {
+            x.style.display = "none";
+          }
+        }
+        </script>
+  <style>
+      body{
+          margin:0px;
+          padding:0px;
+          overflow-x: hidden;
+          overflow-y: auto;
+          font-size: 14px;
+      }
+      ul,p{
+          margin: 0;
+          padding: 0;
+      }
+      li, p, a{
+          white-space: normal;
+        word-break: break-all;
+        word-wrap: break-word;
+      }
+      .header{
+          width:100%;
+          background: #808080;
+      }
+      .contentheader{
+          width:100%;
+          background: #292929;
+      }
+      .footerheader{
+        width:100%;
+          background: #292929;
+      }
+      /**header**/
+      .container{
+          width:80%;
+          margin:0 auto;
+          padding-top:30px;
+          padding-bottom:30px;
+          
+      }
+      .header a{
+          text-decoration: none;
+          color:white;
+      }
+      
+      /***content class**/
+      .content{
+          width:80%;
+        background:#292929;
+        color:#808080;
+        margin:0 auto;
+        padding-top:30px;
+        padding-bottom:30px;
+      }
+      /**footer class**/
+      .footer{
+          background:#292929;
+          color:#808080;
+          border-top: 2px solid #808080;
+          width:80%;
+          margin:0 auto;
+          padding-top:30px;
+          padding-bottom:30px;
+      }
+      .footercontent{
+          float:right;
+      }
+      .mobilecontent{
+          display:none;
+      }
+      /***common list**/
+      ul li{
+          list-style: none;
+          text-decoration: none;
+      }
+      
+      /***other div li***/
+      .header li{
+          display: inline;
+      }
+      .footer li{
+          display:inline;
+          font-size: 12px;
+      }
+      .righticons{
+          float: right;
+      }
+      .lefticons{
+          float:left;
+      }
+      
+      /**anchor tag**/
+      .footer a{
+          text-decoration: none;
+          color:#808080;
+          padding-left: 5px;
+          font-size:10px;
+      }
+      .content a{
+          text-decoration: none;
+          color:#808080;
+      }
+      /**image**/
+      .footerimg{
+          max-width:70%;
+      }
+     .container i{
+        font-size:24px;
+        padding-left:5px;
+        padding-right:5px;
+     }
+     /**mobile screen**/
+    .mobilefooter{
+        display:none;
+    }
+    .collapsehead{
+        display:none;
+    }
+    .subscribed{
+        position: relative;
+        width:100%; 
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    .subscribed input{
+        width:100%;
+        border:none;
+        background: #808080;
+        color:#ffffff;
+        padding: 5px;
+        
+    }
+    .subscribed i{
+        font-size: 20px;
+        cursor:pointer;
+        width:auto;
+        height:auto;
+        position:absolute;
+        right:10px;
+        color:#ffffff;
+        padding-top:5px;
+        padding-bottom:5px;
+    }
+   .subscribed ::-webkit-input-placeholder { /* Edge */
+  color:#fff;
+}
+
+.subscribed :-ms-input-placeholder { /* Internet Explorer */
+  color:#fff;
+}
+
+.subscribed ::placeholder {
+  color: #fff;
+}
+     @media screen and (max-width:798px){
+         .content{
+             display:none;
+         }
+        .righticons{
+            display:none;
+        }
+        
+        .follow{
+            display: none;
+        } 
+        .mobilecontent{
+            display:none;
+        }
+        .collapsehead{
+            display: block;
+        }
+        .collaps{
+            background: #292929;
+            color: #808080;
+            width: 100%;
+            font-size: 15px;
+            border-bottom: 1px solid #808080;
+            border-left:0px;
+            border-top:0px;
+            border-right:0px;
+            padding-top:20px;
+            padding-bottom: 20px;
+            text-align: left;
+            padding-left:20px;
+        }
+        .mobilecontent a{
+            text-decoration:none;
+            color: #808080;
+            padding-top:20px;
+            padding-bottom: 20px;
+            padding-left:20px;
+        }
+        .footer{
+            display:none;
+        }
+        .mobilefooter{
+            padding-top:20px;
+            padding-bottom: 20px;
+            padding-left:20px;
+            display:block;
+        }
+        .mobfooter li {
+            margin-top:5px;
+            padding-bottom: 5px;
+            padding-top:5px;
+            font-size: 14px;
+        }
+        .mobfooter a{
+            color:#808080;
+            text-decoration: none;
+        }
+        .container{
+          width:100%;
+          margin:0 auto;
+          padding-top:30px;
+          padding-bottom:30px;
+      }
+      .footerimg{
+          padding-top: 15px;
+          padding-bottom: 15px;
+      }
+      .lefticons i{
+            font-size:30px;
+        }
+    
+    ul.lefticons{
+        width:100%;
+    }
+    ul.lefticons li {
+    width: 20%;
+    display: block;
+    float: left;
+    align-items: center;
+    /* text-align: center; */
+    }
+     }
+    @media screen and (max-width:992px){
+        body{
+            font-size:12px; 
+        }
+        .footerimg{
+            max-width:250px;
+        }
+        
+    }
+    @media screen and (min-width: 768px){
+        .container, .content, .footer{
+            width: 750px;
+            margin: 0 auto;
+        }
+    }
+    @media screen and (min-width: 991px){
+        .container, .content, .footer{
+            width: 970px;
+            margin: 0 auto;
+        }
+    }
+    @media screen and (min-width: 1200px){
+        .container, .content, .footer{
+            width: 1170px;
+            margin: 0 auto;
+        }
+    }
+   
+  </style>
+  </head>
+  <body>
+    <div class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 ">
+                        <ul class="lefticons">
+                                <li> <a class="follow" href="#" >FOLLOW ME</a></li>
+                                <li> <a class="icon" href="#"><i class="fa fa-twitter"></i></a>
+                                <li> <a  class="icon" href="#"><i class="fa fa-facebook-official"></i></a></li>
+                                <li> <a  class="icon" href="#"><i class="fa fa-google-plus"></i></a></li>
+                                <li><a  class="icon" href="#"><i class="fa fa-linkedin-square"></i></a></li>
+                                <li><a  class="icon" href="#"><i class="fa fa-youtube-play"></i></a></li>
+                            </ul>
+                </div>
+                <div class="col-md-7">
+                        <ul class="righticons">
+                                <li><a href="#"><i class="fa fa-file-text-o" style="font-size:24px">&nbsp;</i>Documentation</a></li>
+                                <li><a href="#"><i class="fa fa-mortar-board" style="font-size:24px"></i>Universities</a></li>
+                                <li><a href="#"><i class="material-icons" style="font-size:24px">group &nbsp;</i>Communities</a></li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <div class="contentheader">
+        <div class="content">
+            <div class="row">
+                <div class="col-md-3 col-sm-3">
+                        <ul class="list">
+                            <li> <h4> About Us</h4></li>
+                            <li> <a href="#"> What is AppDynamics?</a> </li>
+                            <li> <a href="#"> Company</a> </li>
+                            <li> <a href="#"> Products</a> </li>
+                            <li> <a href="#"> Solutions</a> </li>
+                            <li> <a href="#">Pricing</a> </li>
+                            <li> <a href="#"> Trust Center</a> </li>
+                        </ul>
+                </div>
+                <div class="col-md-3 col-sm-3">
+                        <ul class="list">
+                            <li><h4 >Contact Us</h4>
+                            <li> <a href="#"> Get in touch</a> </li>
+                            <li> <a href="#"> Support</a> </li>
+                            <li> <a href="#"> Documentation</a> </li>
+                        </ul>
+                </div>
+                <div class="col-md-3 col-sm-3">
+                        <ul class="list">
+                            <li><h4> Work with Us</h4></li>
+                            <li> <a href="#">Careers</a> </li>
+                            <li> <a href="#">Diversity</a> </li>
+                            <li> <a href="#">Partner</a> </li>
+                        </ul>
+                </div>
+                <div class="col-md-3 col-sm-3">
+                        <h4>Subscribe to our Newsletter</h4>
+                            <div class="subscribed">
+                                    <input type="text"  placeholder="Enter email address" name="search">
+                                    <a><i class="fa fa-angle-right"></i></a>
+
+                            </div>
+                                    <p class="para">By clicking Subcribe,I have read and understood the 
+                                    <a href="" style="color:rgb(68, 68, 121)">Privacy Policy</a> and <a href="" style="color:rgb(68, 68, 121)">terms of use</a></p>
+            </div>
+         </div>
+    </div>
+   <div class="collapsehead">
+        <button type="button" class="collaps" onclick="aboutus()">About us</button>
+            <div id ="myDIV" class="mobilecontent">
+                    <ul>
+                            <li> <a href="#"> What is AppDynamics?</a> </li>
+                            <li> <a href="#"> Company</a> </li>
+                            <li> <a href="#"> Products</a> </li>
+                            <li> <a href="#"> Solutions</a> </li>
+                            <li> <a href="#">Pricing</a> </li>
+                            <li> <a href="#"> Trust Center</a> </li>
+                      </ul>
+            </div>
+            <button type="button" class="collaps" onclick="contactus()">Contact us</button>
+            <div id ="myDIV2" class="mobilecontent">
+                    <ul>
+                            <li> <a href="#"> Get in touch</a> </li>
+                            <li> <a href="#"> Support</a> </li>
+                            <li> <a href="#"> Documentation</a> </li>
+                      </ul>
+            </div>
+            <button type="button" class="collaps" onclick="workwithus()">Work with us</button>
+            <div id ="myDIV3" class="mobilecontent">
+                    <ul>
+                            <li> <a href="#">Careers</a> </li>
+                            <li> <a href="#">Diversity</a> </li>
+                            <li> <a href="#">Partner</a> </li>
+                      </ul>
+            </div>
+    </div>
+     <div class="footer">
+        <div class="row">
+             <div class="col-md-3">
+                    <img class="footerimg" src="C:\Users\Amana\Documents\AppDynamicsLogo_full_white.svg">
+            </div>
+            <div class="col-md-9">
+                <ul class="footercontent">
+                     <li> <span>Copyright-2019AppDynamics All Right Reserved</span></li>
+                    <li><a href="#">English(USA)</a></li>
+                    <li><a href="#">Privacy Statement</a></li>
+                    <li><a href="#">Terms&Conditions</a></li>
+                    <li> <a href="#">Cookie Policy </a></li>
+                    <li> <a href="#">Security</a> </li>
+                </ul>
+             </div>
+        </div>
+    </div>
+    <div class="mobilefooter">
+            <div class="row">
+                 <div class="col-md-3">
+                        <img class="footerimg" src="C:\Users\Amana\Documents\AppDynamicsLogo_full_white.svg">
+                </div>
+                <div class="mobfooter">
+                    <div class="col-md-9">
+                        <ul>
+                                <li><a href="#">Contacts</a></li>
+                                <li><a href="#">Feedback</a></li>
+                                <li><a href="#">Help</a></li>
+                                <li><a href="#">Site Map</a></li>
+                                <li><a href="#">Terms & Conditions</a></li>
+                                <li><a href="#">Privacy</a></li>
+                                <li><a href="#"> Cookies</a></li>
+                                <li><a href="#">Trademarks</a></li>
+                            </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+  </body>
+</html>
